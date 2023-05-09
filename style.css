@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;600;&display=swap");
+
+body {
+	font-family: "Inter", sans-serif;
+	background-color: #F9FAFB;
+}
+
+/* 
+List of colors used 
+
+Heading - #111827
+Sub Heading - #4B5563
+Background color - #F9FAFB
+Card's Right Section Background - #F3F4F6 
+Text's Color - #6B7280
+What's Included Horizontal line - #E5E7EB
+What's Included Text - #4F46E5
+Button Background - #1F2937
+*/
+
+.container {
+	margin: 20px;
+}
+
+.heading {
+	text-align: center;
+	margin-bottom: 0;
+	font-weight: 800;
+}
+
+.sub-heading {
+	text-align: center;
+	margin-top: 8px;
+	font-size: 12px;
+	color: #6B7280;
+}
+
+.card {
+	background-color: #F3F4F6;;
+	display: flex;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 0px 5px 8px #d3d3d3;
+}
+
+.details {
+	padding: 20px 20px 20px 30px;
+	background-color: white;
+	border-radius: 5px;
+}
+
+.details p {
+	color: #6B7280;
+	font-size: 12px;
+}
+
+.spacer {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.text {
+	flex-grow: 0;
+	color: #4F46E5;
+	font-size: 12px;
+	font-weight: 600;
+	padding-right: 10px;
+}
+
+.divider {
+	flex-grow: 1;
+	height: 1px;
+	background-color: #E5E7EB;
+}
+
+.features ul {
+	display: inline-block;
+	padding: 0;
+	font-size: 12px;
+}
+
+.features ul li {
+	display: inline-block;
+	margin-bottom: 20px;
+	padding-right: 50px;
+	width: 200px;
+	text-decoration: none;
+}
+
+.features ul li svg {
+	height: 12px;
+	color: lightgreen;
+}
+
+.pricing {
+	display: block;
+	justify-content: center;
+	margin: auto;
+	width: 100%;
+	max-width: 300px;
+	min-width: 200px;
+	text-align: center;
+}
+
+.firstline {
+	font-size: 14px;
+	font-weight: 600;
+	margin: 0;
+}
+
+.pricing h1 {
+	margin: 10px;
+}
+
+.pricing span {
+	font-size: 14px;
+	font-weight: 400;
+	vertical-align: middle;
+}
+
+.pricing a {
+	color: #6B7280;
+	font-size: 12px;
+}
+
+.pricing button {
+	width: 100%;
+	max-width: 200px;
+	margin-top: 20px;
+	padding: 10px;
+	border: none;
+	background: #1F2937;
+	color: #ffffff;
+	border-radius: 5px;
+}
+
+.sample {
+	font-size: 12px;
+	font-weight: 600;
+}
+
+.sample span {
+	font-size: 12px;
+	color: #6B7280;
+}
+
+@media only screen and (max-width: 768px) {
+	.card {
+		width: 100%;
+		max-width: 400px;
+		min-width: 400px;
+		margin: auto;
+		background-color: white;
+		display: block;
+		border: none;
+		border-radius: 5px;
+		box-shadow: 0px 5px 8px #d3d3d3;
+	}
+
+	.pricing button {
+		max-width: 100%;
+	}
+
+	.sample {
+		padding-bottom: 20px;
+	}
+}
